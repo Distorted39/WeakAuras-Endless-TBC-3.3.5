@@ -69,7 +69,11 @@ RAID_CLASS_COLORS.ROGUE.colorStr = "fffff569"
 RAID_CLASS_COLORS.DRUID.colorStr = "ffff7d0a"
 RAID_CLASS_COLORS.SHAMAN.colorStr = "ff0070de"
 RAID_CLASS_COLORS.WARRIOR.colorStr = "ffc79c6e"
---RAID_CLASS_COLORS.DEATHKNIGHT.colorStr = "ffc41f3b"
+if RAID_CLASS_COLORS.DEATHKNIGHT then
+	RAID_CLASS_COLORS.DEATHKNIGHT.colorStr = "ffc41f3b"
+else
+	-- do nothing
+end
 
 if not SmoothStatusBarMixin then
 	function Lerp(startValue, endValue, amount)
